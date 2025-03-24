@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Poética</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f3f0;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .carta-container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: relative;
+            border: 1px solid #e8d8d0;
+        }
+        
+        .carta-container::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #e8d8d0;
+            border-radius: 3px;
+            pointer-events: none;
+        }
+        
+        .cabecalho {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #d9b3b3;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            color: #8c4a4a;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-style: italic;
+        }
+        
+        .data {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        
+        .corpo-carta {
+            font-size: 1.1em;
+        }
+        
+        .estrofe {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .assinatura {
+            margin-top: 40px;
+            text-align: right;
+            font-style: italic;
+            color: #8c4a4a;
+            font-size: 1.2em;
+        }
+        
+        .flor {
+            position: absolute;
+            opacity: 0.1;
+            font-size: 100px;
+            z-index: 0;
+        }
+        
+        .flor-1 {
+            top: 20px;
+            right: 30px;
+        }
+        
+        .flor-2 {
+            bottom: 20px;
+            left: 30px;
+            transform: rotate(180deg);
+        }
+        
+        @media (max-width: 600px) {
+            .carta-container {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carta-container">
+        <div class="flor flor-1">✿</div>
+        <div class="flor flor-2">✿</div>
+        
+        <div class="cabecalho">
+            <h1>Carta ao Vento</h1>
+            <div class="data">Lua cheia de setembro, 2023</div>
+        </div>
+        
+        <div class="corpo-carta">
+            <div class="estrofe">
+                <p>Leva estas palavras, vento leve,<br>
+                que eu não ouso dizer em voz alta.<br>
+                Leva-as ao ouvido da noite,<br>
+                que ela sabe traduzir meu silêncio.</p>
+            </div>
+            
+            <div class="estrofe">
+                <p>Diz que os meus dias são mais claros<br>
+                quando o pensamento pousa em teu nome.<br>
+                Diz que a saudade tem teu cheiro,<br>
+                e a esperança, tua cor preferida.</p>
+            </div>
+            
+            <div class="estrofe">
+                <p>Se perguntarem por que escrevo,<br>
+                conta que as palavras são pontes<br>
+                entre o que sinto e o que não ouso,<br>
+                entre o que sou e o que desejo.</p>
+            </div>
+            
+            <div class="estrofe">
+                <p>E se um dia este papel chegar a ti,<br>
+                sabe que atravessou tempestades,<br>
+                noites escuras e dias incertos<br>
+                só para te dizer o essencial:</p>
+            </div>
+            
+            <div class="estrofe">
+                <p>Que na geometria do universo,<br>
+                onde tudo é ângulo e distância,<br>
+                meu coração traça sempre<br>
+                uma linha reta até ti.</p>
+            </div>
+        </div>
+        
+        <div class="assinatura">
+            <p>Com o silêncio que fala,<br>
+            <span style="font-size: 1.3em; display: block; margin-top: 5px;">[Seu Nome]</span></p>
+        </div>
+    </div>
+</body>
+</html>
